@@ -48,7 +48,6 @@ function addPrefixToObj(obj, options) {
 module.exports = function(grunt) {
 
   grunt.registerMultiTask('filerev_assets', 'Record asset paths from grunt-filerev to a json file', function() {
-      var done = this.async();
       var self = this, spaces = 0,
         options = self.options({
           dest: 'assets.json',  // Writes to this file.
